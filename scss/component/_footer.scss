@@ -1,0 +1,43 @@
+footer {
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+  .footer-wrapper {
+    width: 90%;
+    .footer-nav {
+      li {
+        a {
+          font-size: $text-med;
+          color: black;
+          letter-spacing: 1px;
+        }
+      }
+    }
+    .footer-nav-icon {
+      align-self: center;
+      display: flex;
+      justify-content: space-evenly;
+      @include Responsive(SM) {
+        width: 50%;
+        justify-content: space-around;
+        margin-left: 8px;
+      }
+      a {
+        font-size: $text-med;
+        color: black;
+        letter-spacing: 1px;
+        :hover {
+          color: teal;
+        }
+      }
+    }
+  }
+}
+
+.ground {
+  background: black;
+  padding: 0.4rem 0;
+  color: whitesmoke;
+  font-size: 1rem;
+  text-align: center;
+  letter-spacing: 1px;
+}

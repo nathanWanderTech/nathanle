@@ -1,0 +1,35 @@
+#intro {
+  margin-top: 2.5rem;
+  .intro-title {
+    text-align: center;
+    letter-spacing: 1px;
+  }
+  .intro-body {
+    margin-top: 2rem;
+    .block-left,
+    .block-right {
+      display: flex;
+      justify-content: space-around;
+    }
+    .block-middle {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      .conversation {
+        padding: 0.55rem 0.75rem;
+        border-radius: 11px;
+        border-top: $border-line;
+        border-bottom: $border-line;
+        margin-bottom: 15px;
+
+        p {
+          margin-bottom: 0;
+          font-size: 1.3rem;
+          font-weight: 500;
+          letter-spacing: 0.5px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

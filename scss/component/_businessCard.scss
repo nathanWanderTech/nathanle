@@ -1,0 +1,58 @@
+#business-card {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  .whole-block {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    .title-mid {
+      font-size: 5rem;
+    }
+    .title-bot {
+      font-size: $text-med;
+      .special-char {
+        font-style: italic;
+        font-weight: bolder;
+      }
+    }
+    .connection {
+      margin-top: 2rem;
+      min-width: 150px;
+      max-width: 25rem;
+      flex-wrap: wrap;
+
+      .connection__href {
+        transition: 0.5s;
+        :hover {
+          .connection__icon {
+            color: $hover-icon-color;
+          }
+        }
+        .connection__icon {
+          font-size: $text-med;
+        }
+      }
+    }
+    .button-block {
+      display: flex;
+      @include Responsive(SM) {
+        flex-direction: column;
+      }
+      .button-style1 {
+        @include buttonFrame(black, black, white);
+        @include hoverButton(white, Black, black);
+      }
+      .button-style2 {
+        margin-left: 1.5rem;
+        @include buttonFrame(white, black, black);
+        @include Responsive(SM) {
+          margin-left: 0;
+          margin-top: 1.5rem;
+        }
+        @include hoverButton(white, #1dacd6, black);
+      }
+    }
+  }
+}

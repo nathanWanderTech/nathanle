@@ -1,0 +1,35 @@
+#linkme {
+  width: 85%;
+  margin-top: 6rem;
+
+  .linkme-top {
+    .linkme-email {
+      margin-top: 3rem;
+      font-size: $text-xlarge;
+    }
+  }
+  .linkme-bottom {
+    margin-top: 3rem;
+    display: flex;
+    a {
+      text-decoration: none;
+      margin-right: 9px;
+      padding: 0;
+
+      i {
+        font-size: $text-med;
+        width: 2.5rem;
+        height: 2.5rem;
+        line-height: 2.5rem;
+        text-align: center;
+        background-color: black;
+        color: white;
+        transition: all 0.3s ease-in-out;
+        :hover {
+          background-color: teal;
+          color: black;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+#portfolio {
+  width: 80%;
+  .portfolio-item {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0;
+    .thumb-content {
+      @include thumb-content;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+#about {
+  margin-top: 7rem;
+  width: 90%;
+
+  .about__title {
+    margin: 0 0;
+    text-align: center;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+  }
+  .about__content {
+    h2 {
+      font-weight: 500 !important;
+    }
+    .content--top {
+      margin-top: 3rem;
+      @include paragraph-font(1.5rem);
+    }
+    .content--mid {
+      margin-top: 3rem;
+    }
+    .content--mid--left {
+      padding: 0 0;
+    }
+    .content--mid--right {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      @include paragraph-font(0);
+      .technology-list {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        .technology-item {
+          font-size: 3.5rem;
+        }
+      }
+    }
+    .content--bottom {
+      margin-top: 3rem;
+      @include paragraph-font(1.5rem);
+    }
+  }
+}

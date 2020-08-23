@@ -1,0 +1,66 @@
+header {
+  display: grid;
+  place-items: center;
+
+  .navbar-block {
+    width: 95%;
+    margin-top: 1rem;
+    .brand-text {
+      margin-right: 0;
+      padding: 0.5rem 0.5rem;
+      border: $border-logo;
+      color: black;
+      .letter {
+        font-size: $text-large;
+        padding: 0 3px;
+        font-size: $logo-size;
+        font-weight: 500;
+      }
+      .letter-N,
+      .letter-A {
+        box-shadow: 1px 0px #888888;
+        padding-left: 0;
+      }
+      .letter-T {
+        color: white;
+        background: teal;
+        padding: 0 5px;
+        box-shadow: 1.5px 1.5px 1.5px #000000c2;
+      }
+      .letter-H {
+        color: teal;
+        font-weight: 550;
+      }
+    }
+
+    .navbar-link-list {
+      width: 44%;
+      justify-content: space-around;
+      @include Responsive(MD) {
+        width: 100%;
+        text-align: center;
+      }
+      .nav-social-list {
+        display: flex;
+        a {
+          font-size: $text-large;
+          color: black;
+        }
+        @include Responsive(MD) {
+          opacity: 0;
+        }
+      }
+      .navbar-link {
+        a {
+          font-size: $text-large;
+          color: black;
+          letter-spacing: 1px;
+        }
+      }
+    }
+
+    .custom-toggler-button {
+      border: 1px solid gray;
+    }
+  }
+}
