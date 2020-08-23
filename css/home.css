@@ -380,7 +380,7 @@ textarea.input100 {
   transition: all 0.5s;
 }
 
-.contact100-form-bt:hover {
+.contact100-form-btn:hover {
   background-color: #333333;
   box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
   -moz-box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
@@ -389,7 +389,7 @@ textarea.input100 {
   -ms-box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
 }
 
-.contact100-form-bt:hover i {
+.contact100-form-btn:hover i {
   -webkit-transform: translateX(12px);
   -moz-transform: translateX(12px);
   -ms-transform: translateX(12px);
