@@ -25,6 +25,8 @@
 
       .connection__href {
         transition: 0.5s;
+        color: black;
+
         :hover {
           .connection__icon {
             color: $hover-icon-color;
