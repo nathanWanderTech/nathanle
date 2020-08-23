@@ -1,445 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Nathan - Web Developer</title>
+    <title>Projeck</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <!-- Scroll -->
-    <style>
-      /* width */
-      ::-webkit-scrollbar {
-        width: 10px;
-      }
 
-      /* Track */
-      ::-webkit-scrollbar-track {
-        box-shadow: inset 0 0 5px grey;
-        border-radius: 15px;
-      }
-
-      /* Handle */
-      ::-webkit-scrollbar-thumb {
-        background: gray;
-        border-radius: 50px;
-      }
-
-      /* Handle on hover */
-      ::-webkit-scrollbar-thumb:hover {
-        background: gray;
-      }
-    </style>
     <!-- Bootstrap CSS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
     />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="../css/ihover.css" />
-    <link rel="stylesheet" href="../css/home.css" />
+    <link rel="stylesheet" href="../vendor/animate.css" />
+    <link rel="stylesheet" href="../css/styleB.css" />
   </head>
   <body>
-    <div id="wrapper">
-      <header class="container-fluid">
-        <nav class="navbar navbar-expand-md navbar-block">
-          <!-- Logo -->
-          <a class="navbar-brand brand-text" href="#"
-            ><span class="letter letter-N">N</span>
-            <span class="letter">A</span>
-            <span class="letter letter-T">T</span>
-            <span class="letter letter-H">H</span>
-            <span class="letter letter-A">A</span>
-            <span class="letter">N</span>
-          </a>
-          <!-- Toggler Button -->
-          <button
-            class="navbar-toggler custom-toggler-button"
-            type="button"
-            data-toggle="collapse"
-            data-target="#collapsibleNavbar"
+    <section id="business-card">
+      <div class="container whole-block">
+        <div
+          class="title-block wow fadeInDown"
+          data-wow-duration="0.9s"
+          data-wow-delay="0.7s"
+        >
+          <h3 class="title-top" id="greeting">Hi, I'm Nathan</h3>
+          <h1 class="title-mid">Web Frontend Developer</h1>
+          <p class="title-bot">
+            Code <span class="special-char">{AND}</span> Developer
+          </p>
+        </div>
+
+        <div class="button-block">
+          <a
+            href="./home.html"
+            class="button-style1 button__inner-text wow fadeInLeft"
+            data-wow-duration="0.9s"
+            data-wow-delay="0.7s"
           >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <!-- Navbar links -->
-          <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav ml-auto navbar-link-list">
-              <li class="nav-item navbar-link">
-                <a class="nav-link" href="#">Home</a>
-              </li>
-              <li class="nav-item navbar-link">
-                <a class="nav-link" href="#about">About</a>
-              </li>
-              <li class="nav-item navbar-link">
-                <a class="nav-link" href="#">Portfolio</a>
-              </li>
-              <li class="nav-item navbar-link">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li>
-              <li class="nav-item navbar-link">
-                <div class="nav-social-list">
-                  <a
-                    class="nav-link"
-                    href="https://www.facebook.com/nhacongle"
-                    target="blank"
-                    ><i class="fab fa-facebook-f connection__icon"></i
-                  ></a>
-                  <a class="nav-link" href="#" target="blank"
-                    ><i class="fab fa-linkedin-in connection__icon"></i
-                  ></a>
-                  <a
-                    class="nav-link"
-                    href="https://github.com/nathanWanderTech"
-                    target="blank"
-                    ><i class="fab fa-github connection__icon"></i
-                  ></a>
-                  <a class="nav-link" href="#" target="blank"
-                    ><i class="fas fa-at connection__icon"></i
-                  ></a>
-                  <a
-                    class="nav-link"
-                    href="https://twitter.com/nathan_le9"
-                    target="blank"
-                    ><i class="fab fa-twitter connection__icon"></i
-                  ></a>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </header>
-
-      <!-- INTRO -->
-      <section id="intro" class="container-fluid">
-        <div class="intro-title">
-          <h1>Hi! I am Nathan, { A web frontend developer };</h1>
-        </div>
-        <div class="row intro-body">
-          <div class="col-md-3 block-left">
-            <img src="../images/chair.jpg" class="img-fluid" />
-          </div>
-
-          <div class="col-md-6 block-middle">
-            <div class="conversation">
-              <p id="sentence">
-                Wellcome to my Home. How are you?
-              </p>
-            </div>
-            <img src="../images/coffee.jpg" class="img-fluid" />
-          </div>
-
-          <div class="col-md-3 block-right">
-            <img src="../images/work.jpg" class="img-fluid" />
-            <!-- Special thanks to  Morgan Richardson's photo -->
-          </div>
-        </div>
-      </section>
-
-      <!-- ABOUT -->
-      <section id="about" class="container-fluid">
-        <h1 class="about__title">ABOUT ME</h1>
-        <div class="row about__content">
-          <div class="col-12 content--top">
-            <h2>And here’s where we meet ...</h2>
-            <p>
-              Hello there! My name is Nathan or Le Cong Nha as my parents called
-              their boy. I have Bachelor's Degree in Agricultural Economics,
-              Master in Finance and Banking - studying on the effects of
-              exchange rates on inflation, but now I am pursuing a career path
-              in tech-industry by being a good looking in Asian standard web
-              builder guy or frontend developer for more precisely.
-            </p>
-          </div>
-          <div class="col-md-5 content--mid content--mid--left">
-            <img src="../images/basecamp.jpg" class="img-fluid" />
-          </div>
-          <div class="col-md-7 content--mid content--mid--right">
-            <h2>... A sip of coffee</h2>
-            <p>
-              I started out by learning coding with Python for data processed as
-              my previous position in Consulting Business required. First steps
-              at the beginning were not easy because of distinctions in the
-              computer language. However, I miraculously made it out when
-              studied Java and developed my programming skills with JavaScript.
-              I am now using JavaScript as the main programming language along
-              with HTML5, CSS, SCSS and React framework to make wonderful and
-              minimalist websites, focusing on benefits user in saving loading
-              times and fancy surfing experiences. Here are what I use:
-            </p>
-            <div class="technology-list">
-              <i class="fab fa-js technology-item" style="color: #f7df1e;"></i>
-              <i
-                class="fab fa-java technology-item"
-                style="color: #fd7e14;"
-              ></i>
-              <i
-                class="fab fa-html5 technology-item"
-                style="color: #e44d26;"
-              ></i>
-              <i
-                class="fab fa-css3-alt technology-item"
-                style="color: #2965f1;"
-              ></i>
-              <i
-                class="fab fa-sass technology-item"
-                style="color: #cd6799;"
-              ></i>
-              <i
-                class="fab fa-react technology-item"
-                style="color: #61dbfb;"
-              ></i>
-              <i
-                class="fab fa-angular technology-item"
-                style="color: #dd1b16;"
-              ></i>
-            </div>
-          </div>
-          <div class="col-12 content--bottom">
-            <h2>Talk to me …</h2>
-            <p>
-              Apart from professional life, I am also person who enjoy morning
-              trekking in the Himalayan Range. Whether you are looking for
-              full-time web developer, freelancer, business advisory or just a
-              sip of coffee and small talk, hit me an email or message me on my
-              social channels.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- CONTACT FORM -->
-      <section id="contact" class="container-fluid">
-        <h1 class="contact-title">CONTACT ME</h1>
-        <div class="row">
-          <div class="col-md-5 contact-left-component">
-            <div class="inner-text">
-              <h2 class="mb-3">
-                You Have Ideas
-                <i
-                  class="far fa-lightbulb"
-                  style="color: yellow; font-size: 2rem;"
-                ></i>
-              </h2>
-
-              <p>
-                That is amazing and I am all ears. Contact me through email,
-                social media networks or simply filling the contact form.
-                Together, we will make your ideas come to real life.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-7 contact-right-component">
-            <form class="contact100-form validate-form mt-5">
-              <div
-                class="wrap-input100 rs1-wrap-input100 validate-input"
-                data-validate="Name is required"
-              >
-                <span class="label-input100">Your Name</span>
-                <input
-                  class="input100"
-                  type="text"
-                  name="name"
-                  placeholder="Enter your name"
-                  autocomplete="off"
-                />
-                <span class="focus-input100"></span>
-              </div>
-
-              <div
-                class="wrap-input100 rs1-wrap-input100 validate-input"
-                data-validate="Valid email is required: ex@abc.xyz"
-              >
-                <span class="label-input100">Email</span>
-                <input
-                  class="input100"
-                  type="text"
-                  name="email"
-                  placeholder="Enter your email addess"
-                  autocomplete="off"
-                />
-                <span class="focus-input100"></span>
-              </div>
-
-              <div
-                class="wrap-input100 validate-input"
-                data-validate="Message is required"
-              >
-                <span class="label-input100">Message</span>
-                <textarea
-                  class="input100"
-                  name="message"
-                  placeholder="Your message here..."
-                ></textarea>
-                <span class="focus-input100"></span>
-              </div>
-
-              <div class="container-contact100-form-btn ml-2">
-                <button class="contact100-form-btn">
-                  <span>
-                    Submit
-                    <i class="fas fa-paper-plane m-l-7" aria-hidden="true"></i>
-                  </span>
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </section>
-
-      <!-- PORTFOLIO -->
-      <section id="portfolio" class="container-fluid">
-        <h1 class="text-center">PORTFOLIO</h1>
-        <div class="row">
-          <div class="col-md-6 col portfolio-item">
-            <div class="ih-item square effect6 from_top_and_bottom">
-              <a href="#">
-                <div class="img">
-                  <img src="../images/cake.jpg" alt="img" />
-                </div>
-                <div class="info thumb-content">
-                  <h3>Beauty Baker</h3>
-                  <p>
-                    Beauty Baker is a strong impressive Home page landing for a
-                    bakery shop followed by W3C layout designed with very
-                    emotionally intense color layer.
-                  </p>
-                </div></a
-              >
-            </div>
-            <!-- end normal -->
-          </div>
-
-          <div class="col-md-6 col portfolio-item">
-            <div class="ih-item square effect6 from_top_and_bottom">
-              <a href="#">
-                <div class="img">
-                  <img src="../images/house1.jpg" alt="img" />
-                </div>
-                <div class="info thumb-content">
-                  <h3>Real Estates</h3>
-                  <p>
-                    A Home page for Real Estate, Property & Homes cloned from
-                    W3C design
-                  </p>
-                </div></a
-              >
-            </div>
-          </div>
-
-          <div class="col portfolio-item">
-            <div class="ih-item square effect6 from_top_and_bottom">
-              <a href="#">
-                <div class="img">
-                  <img src="../images/school.jpg" alt="img" />
-                </div>
-                <div class="info thumb-content">
-                  <h3>E-learning</h3>
-                  <p>
-                    This is a simple Home page for E-learning Institution or
-                    School's site designed by W3C.
-                  </p>
-                </div></a
-              >
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- LINK ME -->
-      <section id="linkme" class="container-fluid">
-        <div class="linkme-top">
-          <h1 class="about__title">Link Me</h1>
-          <p class="linkme-email">Email to: myemail@gmail.com</p>
-        </div>
-        <div class="linkme-bottom">
+            View Portfolio
+          </a>
           <a
-            class="nav-link"
-            href="https://www.facebook.com/nhacongle"
-            target="blank"
-            ><i class="fab fa-facebook-f square-icon"></i
-          ></a>
-          <a class="nav-link" href="#" target="blank"
-            ><i class="fab fa-linkedin-in square-icon"></i
-          ></a>
-          <a
-            class="nav-link"
-            href="https://github.com/nathanWanderTech"
-            target="blank"
-            ><i class="fab fa-github square-icon"></i
-          ></a>
-          <a class="nav-link" href="#" target="blank"
-            ><i class="fas fa-at square-icon"></i
-          ></a>
-          <a
-            class="nav-link"
-            href="https://twitter.com/nathan_le9"
-            target="blank"
-            ><i class="fab fa-twitter square-icon"></i
-          ></a>
+            href="./home.html"
+            class="button-style2 wow fadeInRight"
+            data-wow-duration="0.9s"
+            data-wow-delay="0.7s"
+          >
+            Contact
+          </a>
         </div>
-      </section>
 
-      <!-- FOOTER -->
-      <footer>
-        <div class="container-fluid footer-wrapper">
-          <div class="row">
-            <div class="col-sm-9 footer-nav">
-              <ul class="list-unstyled d-flex mb-0">
-                <li class="my-navbar-link">
-                  <a class="nav-link" href="#about">About</a>
-                </li>
-                <li class="my-navbar-link">
-                  <a class="nav-link" href="#portfolio">Portfolio</a>
-                </li>
-                <li class="my-navbar-link">
-                  <a class="nav-link" href="#contact">Contact</a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-sm-3 footer-nav-icon">
-              <a
-                class=""
-                href="https://www.facebook.com/nhacongle"
-                target="blank"
+        <div
+          class="connection wow fadeInUp"
+          data-wow-duration="0.9s"
+          data-wow-delay="0.7s"
+        >
+          <ul class="list-unstyled d-flex justify-content-around">
+            <li>
+              <a class="connection__href"
                 ><i class="fab fa-facebook-f connection__icon"></i
               ></a>
-              <a class="" href="#" target="blank"
+            </li>
+            <li>
+              <a class="connection__href"
                 ><i class="fab fa-linkedin-in connection__icon"></i
               ></a>
-              <a
-                class=""
-                href="https://github.com/nathanWanderTech"
-                target="blank"
-                ><i class="fab fa-github connection__icon"></i
-              ></a>
-              <a class="" href="#" target="blank"
-                ><i class="fas fa-at connection__icon"></i
-              ></a>
-              <a class="" href="https://twitter.com/nathan_le9" target="blank"
+            </li>
+            <li>
+              <a class="connection__href"
                 ><i class="fab fa-twitter connection__icon"></i
               ></a>
-            </div>
-          </div>
+            </li>
+            <li>
+              <a class="connection__href"
+                ><i class="fab fa-github connection__icon"></i
+              ></a>
+            </li>
+            <li>
+              <a class="connection__href"
+                ><i class="fas fa-at connection__icon"></i
+              ></a>
+            </li>
+            <li>
+              <a class="connection__href"
+                ><i class="fab fa-instagram-square connection__icon"></i
+              ></a>
+            </li>
+          </ul>
         </div>
-      </footer>
-      <div class="ground">
-        <p>Pure coded by Nathan</p>
-        <p>Contact me at nathanle@abc.com</p>
       </div>
-    </div>
+    </section>
 
     <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="../js/home.js"></script>
+    <script src="../js/mainB.js"></script>
+    <!-- WOW VENDOR -->
+    <script src="../vendor/wow.min.js"></script>
+
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>
