@@ -3,10 +3,12 @@
   padding: 0;
   margin: 0;
   font-family: "Playfair Display", serif;
-  font-size: 13px; }
+  font-size: 13px;
+}
 
 html {
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+}
 
 /* Font size */
 /* TEXT COLOR*/
@@ -19,63 +21,85 @@ html {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 100%; }
-  #business-card .whole-block {
-    display: grid;
-    place-items: center;
-    text-align: center; }
-    #business-card .whole-block .title-mid {
-      font-size: 5rem; }
-    #business-card .whole-block .title-bot {
-      font-size: 1.3rem; }
-      #business-card .whole-block .title-bot .special-char {
-        font-style: italic;
-        font-weight: bolder; }
-    #business-card .whole-block .connection {
-      margin-top: 2rem;
-      min-width: 150px;
-      max-width: 25rem;
-      flex-wrap: wrap; }
-      #business-card .whole-block .connection .connection__href {
-        transition: 0.5s;
-        color: black; }
-        #business-card .whole-block .connection .connection__href :hover .connection__icon {
-          color: #1dacd6; }
-        #business-card .whole-block .connection .connection__href .connection__icon {
-          font-size: 1.3rem; }
-    #business-card .whole-block .button-block {
-      display: flex; }
-      @media only screen and (max-width: 576px) {
-        #business-card .whole-block .button-block {
-          flex-direction: column; } }
-      #business-card .whole-block .button-block .button-style1 {
-        width: 12rem;
-        padding: 0.75rem 0.75rem;
-        background-color: black;
-        border: 1.5px solid black;
-        text-decoration: none;
-        color: white;
-        font-size: 1.3rem; }
-        #business-card .whole-block .button-block .button-style1 :hover {
-          background-color: white;
-          border-color: Black;
-          color: black; }
-      #business-card .whole-block .button-block .button-style2 {
-        margin-left: 1.5rem;
-        width: 12rem;
-        padding: 0.75rem 0.75rem;
-        background-color: white;
-        border: 1.5px solid black;
-        text-decoration: none;
-        color: black;
-        font-size: 1.3rem; }
-        @media only screen and (max-width: 576px) {
-          #business-card .whole-block .button-block .button-style2 {
-            margin-left: 0;
-            margin-top: 1.5rem; } }
-        #business-card .whole-block .button-block .button-style2 :hover {
-          background-color: white;
-          border-color: #1dacd6;
-          color: black; }
+  width: 100%;
+}
+#business-card .whole-block {
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+#business-card .whole-block .title-mid {
+  font-size: 5rem;
+}
+#business-card .whole-block .title-bot {
+  font-size: 1.3rem;
+}
+#business-card .whole-block .title-bot .special-char {
+  font-style: italic;
+  font-weight: bolder;
+}
+#business-card .whole-block .connection {
+  margin-top: 2rem;
+  min-width: 150px;
+  max-width: 25rem;
+  flex-wrap: wrap;
+}
+#business-card .whole-block .connection .connection__href {
+  transition: 0.5s;
+  color: black;
+}
+#business-card
+  .whole-block
+  .connection
+  .connection__href:hover
+  .connection__icon {
+  color: #1dacd6;
+}
+#business-card .whole-block .connection .connection__href .connection__icon {
+  font-size: 1.3rem;
+}
+#business-card .whole-block .button-block {
+  display: flex;
+}
+@media only screen and (max-width: 576px) {
+  #business-card .whole-block .button-block {
+    flex-direction: column;
+  }
+}
+#business-card .whole-block .button-block .button-style1 {
+  width: 12rem;
+  padding: 0.75rem 0.75rem;
+  background-color: black;
+  border: 1.5px solid black;
+  text-decoration: none;
+  color: white;
+  font-size: 1.3rem;
+}
+#business-card .whole-block .button-block .button-style1:hover {
+  background-color: white;
+  border-color: Black;
+  color: black;
+}
+#business-card .whole-block .button-block .button-style2 {
+  margin-left: 1.5rem;
+  width: 12rem;
+  padding: 0.75rem 0.75rem;
+  background-color: white;
+  border: 1.5px solid black;
+  text-decoration: none;
+  color: black;
+  font-size: 1.3rem;
+}
+@media only screen and (max-width: 576px) {
+  #business-card .whole-block .button-block .button-style2 {
+    margin-left: 0;
+    margin-top: 1.5rem;
+  }
+}
+#business-card .whole-block .button-block .button-style2:hover {
+  background-color: white;
+  border-color: #1dacd6;
+  color: black;
+}
 
 /*# sourceMappingURL=styleB.css.map */
