@@ -8,6 +8,7 @@ const greeting = [
   "Hi, I'm Nathan",
 ];
 let index = 0;
+
 const sayHi = () => {
   document.getElementById("greeting").innerHTML = greeting[index];
   index === 6 ? (index = 0) : index++;
