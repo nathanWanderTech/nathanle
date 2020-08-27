@@ -93,14 +93,6 @@ header .navbar-block .custom-toggler-button {
 #intro .mobile {
   display: none;
 }
-@media only screen and (max-width: 768px) {
-  #intro .desktop {
-    display: none;
-  }
-  #intro .mobile {
-    display: block;
-  }
-}
 #intro .intro-body {
   margin-top: 2rem;
 }
@@ -521,7 +513,7 @@ footer .footer-wrapper .footer-nav-icon a:hover {
   text-decoration: none;
   color: black;
 }
-#linkme .linkme-top .linkme-email .email-link :hover {
+#linkme .linkme-top .linkme-email .email-link:hover {
   color: #1dacd6;
 }
 #linkme .linkme-bottom {

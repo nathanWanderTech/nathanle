@@ -7,14 +7,7 @@
   .mobile {
     display: none;
   }
-  @include Responsive(MD) {
-    .desktop {
-      display: none;
-    }
-    .mobile {
-      display: block;
-    }
-  }
+
   .intro-body {
     margin-top: 2rem;
     .block-left,
