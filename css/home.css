@@ -90,6 +90,17 @@ header .navbar-block .custom-toggler-button {
   text-align: center;
   letter-spacing: 1px;
 }
+#intro .mobile {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  #intro .desktop {
+    display: none;
+  }
+  #intro .mobile {
+    display: block;
+  }
+}
 #intro .intro-body {
   margin-top: 2rem;
 }
@@ -116,6 +127,11 @@ header .navbar-block .custom-toggler-button {
   font-weight: 500;
   letter-spacing: 0.5px;
   text-align: center;
+}
+@media only screen and (max-width: 768px) {
+  #intro .intro-body .block-left {
+    display: none;
+  }
 }
 
 #about {
@@ -177,6 +193,24 @@ header .navbar-block .custom-toggler-button {
 #about .about__content .content--mid--right .technology-list .technology-item {
   font-size: 3.5rem;
 }
+@media only screen and (max-width: 768px) {
+  #about
+    .about__content
+    .content--mid--right
+    .technology-list
+    .technology-item {
+    font-size: 3rem;
+  }
+}
+@media only screen and (max-width: 576px) {
+  #about
+    .about__content
+    .content--mid--right
+    .technology-list
+    .technology-item {
+    font-size: 2.8rem;
+  }
+}
 #about .about__content .content--bottom {
   margin-top: 3rem;
 }
@@ -197,6 +231,11 @@ header .navbar-block .custom-toggler-button {
   margin-top: 6rem;
   width: 90%;
 }
+@media only screen and (max-width: 768px) {
+  #contact {
+    margin-top: 5rem;
+  }
+}
 
 .contact-title {
   text-align: center;
@@ -208,6 +247,11 @@ header .navbar-block .custom-toggler-button {
   flex-direction: column;
   justify-content: space-around;
   padding-right: 3rem;
+}
+@media only screen and (max-width: 768px) {
+  .contact-left-component {
+    margin-top: 3.5rem;
+  }
 }
 .contact-left-component .inner-text {
   margin-bottom: 1rem;
@@ -456,6 +500,13 @@ footer .footer-wrapper .footer-nav-icon a:hover {
   text-align: center;
   letter-spacing: 1px;
 }
+.ground .email-link {
+  color: white;
+  text-decoration: none;
+}
+.ground .email-link:hover {
+  color: #1dacd6;
+}
 
 #linkme {
   width: 85%;
@@ -464,6 +515,14 @@ footer .footer-wrapper .footer-nav-icon a:hover {
 #linkme .linkme-top .linkme-email {
   margin-top: 3rem;
   font-size: 1.9rem;
+}
+#linkme .linkme-top .linkme-email .email-link {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: black;
+}
+#linkme .linkme-top .linkme-email .email-link :hover {
+  color: #1dacd6;
 }
 #linkme .linkme-bottom {
   margin-top: 3rem;

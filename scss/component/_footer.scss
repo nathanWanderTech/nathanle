@@ -40,4 +40,11 @@ footer {
   font-size: 1rem;
   text-align: center;
   letter-spacing: 1px;
+  .email-link {
+    color: white;
+    text-decoration: none;
+    :hover {
+      color: $hover-icon-color;
+    }
+  }
 }

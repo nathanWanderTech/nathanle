@@ -31,8 +31,15 @@
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
+
         .technology-item {
           font-size: 3.5rem;
+          @include Responsive(MD) {
+            font-size: 3rem;
+          }
+          @include Responsive(SM) {
+            font-size: 2.8rem;
+          }
         }
       }
     }

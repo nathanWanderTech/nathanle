@@ -4,6 +4,17 @@
     text-align: center;
     letter-spacing: 1px;
   }
+  .mobile {
+    display: none;
+  }
+  @include Responsive(MD) {
+    .desktop {
+      display: none;
+    }
+    .mobile {
+      display: block;
+    }
+  }
   .intro-body {
     margin-top: 2rem;
     .block-left,
@@ -29,6 +40,11 @@
           letter-spacing: 0.5px;
           text-align: center;
         }
+      }
+    }
+    @include Responsive(MD) {
+      .block-left {
+        display: none;
       }
     }
   }

@@ -6,6 +6,14 @@
     .linkme-email {
       margin-top: 3rem;
       font-size: $text-xlarge;
+      .email-link {
+        font-size: 1.8rem;
+        text-decoration: none;
+        color: black;
+        :hover {
+          color: $hover-icon-color;
+        }
+      }
     }
   }
   .linkme-bottom {
